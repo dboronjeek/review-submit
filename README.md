@@ -1,36 +1,51 @@
-# Interactive Rating App / Interaktivna Rating Aplikacija
+# Interaktivna Rating Aplikacija / Interactive Rating App
 
-[HR] Moderna React aplikacija za prikupljanje ocjena korisnika s podrškom za više jezika.
-[EN] A modern React application for collecting user ratings with multi-language support.
-
----
-
-## 🌍 Language Support / Podrška za jezike
-Aplikacija nudi izbor jezika na samom početku / The app offers a language choice at the very start:
-* **Hrvatski (Croatian)** 🇭🇷
-* **English** 🇬🇧
+Ovaj projekt je moderna web aplikacija izgrađena u Reactu koja omogućuje korisnicima ocjenjivanje usluge uz potpunu podršku za dva jezika.
 
 ---
 
-## 🚀 Features / Značajke
+## 🌍 Odabir jezika / Language Selection
+
+Glavna značajka aplikacije je početni zaslon koji korisniku nudi jasan izbor:
+* **Hrvatski jezik:** Klikom na karticu sa zastavom 🇭🇷 i tekstom "Odaberi hrvatski".
+* **English language:** By clicking the card with the flag 🇬🇧 and text "Choose English".
+
+Ovaj pristup osigurava da korisnik odmah razumije sučelje bez obzira na predznanje engleskog jezika.
+
+---
+
+## 🚀 Ključne funkcionalnosti / Key Features
 
 ### [HR] Hrvatski:
-* **Dvojezičnost:** Potpuni prijevodi za sve faze (ocjenjivanje, potvrda, zahvala).
-* **Sustav potvrde:** Korisnik mora potvrditi svoju ocjenu (ekran "Jeste li sigurni?").
-* **Logika odustajanja:** Mogućnost ponovnog ocjenjivanja ili slanja komentara bez ocjene.
-* **Responzivnost:** Optimizirano za sve veličine ekrana.
+* **Vizualni odabir:** Intuitivne "tipkice" u obliku kartica sa zastavama za promjenu jezika.
+* **Provjera prije slanja:** Sustav "Jeste li sigurni?" sprječava slučajne pogreške.
+* **Povratne informacije:** Mogućnost ostavljanja tekstualnog komentara ako korisnik odluči da ne želi poslati brojčanu ocjenu.
+* **Čist dizajn:** Uklonjeni su svi suvišni elementi (poput zvjezdice na početnom ekranu) radi bolje preglednosti.
 
 ### [EN] English:
-* **Dual Language:** Full translations for all stages (rating, confirmation, thank you).
-* **Confirmation System:** Users must confirm their rating ("Are you sure?" screen).
-* **Decline Logic:** Options to rate again or leave a text comment without a rating.
-* **Responsive:** Fully optimized for mobile and desktop views.
+* **Visual Selection:** Intuitive card-style buttons with flags for switching languages.
+* **Double-Check System:** "Are you sure?" screen prevents accidental rating submissions.
+* **Feedback Logic:** Option to leave a text comment if the user declines to give a numeric rating.
+* **Clean UI:** Removed unnecessary elements (like the star icon on the first screen) for a better focus.
 
 ---
 
-## 🛠️ Installation / Instalacija
+## 🛠️ Tehnički detalji / Technical Setup
 
-1. Clone the repository / Klonirajte repozitorij.
-2. Install dependencies / Instalirajte ovisnosti:
-   ```bash
-   npm install
+### Pokretanje projekta:
+1. Instalirajte pakete: `npm install`
+2. Pokrenite razvojni server: `npm start`
+
+### Struktura (Samo bitne datoteke):
+* `src/RatingApp.jsx` - Sadrži svu logiku i tekstove prijevoda.
+* `src/index.css` - Sadrži dizajn kartica, zastava i interaktivnih gumba.
+* `src/images/` - Sadrži lokalne ikone potrebne za UI.
+
+---
+
+## 🎨 Dizajn i Boje / Design & Palette
+
+Aplikacija koristi tamnu temu s modernim narančastim naglascima:
+* **Narančasta (Gumbi/Akcije):** `hsl(25, 97%, 53%)`
+* **Tamna pozadina:** `hsl(216, 12%, 8%)`
+* **Istaknuta ocjena:** Svijetli broj s narančastim sjajem (glow efekt).
