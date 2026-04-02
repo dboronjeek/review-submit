@@ -2,7 +2,7 @@
   "name": "review-submit",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://D-ominik.github.io/review-submit",
+  "homepage": "https://dboronjeek.github.io/review-submit/",
   "dependencies": {
     "gh-pages": "^6.1.1",
     "react": "^18.2.0",
