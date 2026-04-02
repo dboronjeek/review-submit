@@ -1,51 +1,45 @@
 # Interaktivna Rating Aplikacija / Interactive Rating App
 
-Ovaj projekt je moderna web aplikacija izgrađena u Reactu koja omogućuje korisnicima ocjenjivanje usluge uz potpunu podršku za dva jezika.
+Ovaj projekt je moderni sustav za prikupljanje povratnih informacija koji na samom početku omogućuje korisniku odabir jezika putem interaktivnih kartica.
 
 ---
 
-## 🌍 Odabir jezika / Language Selection
+## 🇭🇷 / 🇬🇧 Odabir jezika (Language Selection)
 
-Glavna značajka aplikacije je početni zaslon koji korisniku nudi jasan izbor:
-* **Hrvatski jezik:** Klikom na karticu sa zastavom 🇭🇷 i tekstom "Odaberi hrvatski".
-* **English language:** By clicking the card with the flag 🇬🇧 and text "Choose English".
+Prva stvar koju korisnik vidi su dvije velike "tipkice" (kartice) sa zastavama. 
+The first thing the user sees are two large interactive cards with flags:
 
-Ovaj pristup osigurava da korisnik odmah razumije sučelje bez obzira na predznanje engleskog jezika.
+* **Lijeva tipka / Left Button:** "Odaberi hrvatski" (Hrvatska zastava 🇭🇷)
+* **Desna tipka / Right Button:** "Choose English" (UK zastava 🇬🇧)
 
----
-
-## 🚀 Ključne funkcionalnosti / Key Features
-
-### [HR] Hrvatski:
-* **Vizualni odabir:** Intuitivne "tipkice" u obliku kartica sa zastavama za promjenu jezika.
-* **Provjera prije slanja:** Sustav "Jeste li sigurni?" sprječava slučajne pogreške.
-* **Povratne informacije:** Mogućnost ostavljanja tekstualnog komentara ako korisnik odluči da ne želi poslati brojčanu ocjenu.
-* **Čist dizajn:** Uklonjeni su svi suvišni elementi (poput zvjezdice na početnom ekranu) radi bolje preglednosti.
-
-### [EN] English:
-* **Visual Selection:** Intuitive card-style buttons with flags for switching languages.
-* **Double-Check System:** "Are you sure?" screen prevents accidental rating submissions.
-* **Feedback Logic:** Option to leave a text comment if the user declines to give a numeric rating.
-* **Clean UI:** Removed unnecessary elements (like the star icon on the first screen) for a better focus.
+Klikom na željenu zastavu, cijela aplikacija se automatski prevodi na taj jezik bez osvježavanja stranice.
 
 ---
 
-## 🛠️ Tehnički detalji / Technical Setup
+## 🚀 Tijek aplikacije / App Flow
 
-### Pokretanje projekta:
-1. Instalirajte pakete: `npm install`
-2. Pokrenite razvojni server: `npm start`
+Nakon što stisnete tipkicu za jezik, aplikacija prolazi kroz sljedeće korake:
 
-### Struktura (Samo bitne datoteke):
-* `src/RatingApp.jsx` - Sadrži svu logiku i tekstove prijevoda.
-* `src/index.css` - Sadrži dizajn kartica, zastava i interaktivnih gumba.
-* `src/images/` - Sadrži lokalne ikone potrebne za UI.
+1.  **Ekran za ocjenjivanje:** Odabir broja od 1 do 5.
+2.  **Provjera (Confirmation):** Iskače prozor "Jeste li sigurni?" s prikazom vaše ocjene.
+3.  **Dodatne opcije:** Ako odustanete, možete napisati komentar ili se vratiti na početak.
+4.  **Zahvala:** Finalni ekran s ilustracijom i potvrdom odabrane ocjene.
 
 ---
 
-## 🎨 Dizajn i Boje / Design & Palette
+## 🎨 Vizualni Identitet
 
-Aplikacija koristi tamnu temu s modernim narančastim naglascima:
-* **Narančasta (Gumbi/Akcije):** `hsl(25, 97%, 53%)`
-* **Tamna pozadina:** `hsl(216, 12%, 8%)`
-* **Istaknuta ocjena:** Svijetli broj s narančastim sjajem (glow efekt).
+* **Čistoća:** Maknuta je zvjezdica s početnog ekrana kako bi fokus ostao isključivo na odabiru jezika.
+* **Boje:** Koristi se tamna tema s narančastim naglascima (`#FB7C1D`) za bolju vidljivost.
+* **Interaktivnost:** Gumbi za jezik (zastave) imaju efekt podizanja i sjaja kada se pređe mišem preko njih.
+
+---
+
+## 🛠️ Instalacija
+
+```bash
+# Instalacija ovisnosti
+npm install
+
+# Pokretanje aplikacije
+npm start
