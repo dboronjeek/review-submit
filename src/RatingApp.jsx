@@ -57,7 +57,7 @@ function RatingApp() {
         <div className="card thank-you">
           <div className="language-picker">
             <div className="lang-group">
-              <h1 className="lang-title">Odaberi hrvatski</h1>
+              <h1 className="lang-title">Odaberi</h1>
               <div className="lang-option" onClick={() => setLang("hr")}>
                 <img src="https://flagcdn.com/w160/hr.png" alt="Hrvatski" />
                 <span>HRVATSKI</span>
@@ -65,7 +65,7 @@ function RatingApp() {
             </div>
 
             <div className="lang-group">
-              <h1 className="lang-title">Choose English</h1>
+              <h1 className="lang-title">Choose</h1>
               <div className="lang-option" onClick={() => setLang("en")}>
                 <img src="https://flagcdn.com/w160/gb.png" alt="English" />
                 <span>ENGLISH</span>
