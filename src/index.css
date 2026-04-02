@@ -37,6 +37,7 @@ body {
   padding: 40px;
   border-radius: 35px;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 .language-picker {
@@ -58,7 +59,6 @@ body {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 18px;
-  text-align: center;
 }
 
 .lang-option {
@@ -103,7 +103,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
 }
 
 h1 {
@@ -159,11 +159,37 @@ p {
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s ease;
+  text-transform: uppercase;
 }
 
 .submit-btn:hover {
   background: var(--white);
   color: var(--orange);
+}
+
+.back-btn,
+.confirm-buttons button:not(.submit-btn),
+.decline-section button:not(.submit-btn) {
+  width: 100%;
+  background: transparent;
+  color: var(--light-grey);
+  border: 1px solid var(--medium-grey);
+  padding: 14px;
+  border-radius: 35px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+.back-btn:hover,
+.confirm-buttons button:not(.submit-btn):hover,
+.decline-section button:not(.submit-btn):hover {
+  color: var(--white);
+  border-color: var(--white);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .confirm-display {
@@ -172,22 +198,30 @@ p {
   justify-content: center;
   gap: 15px;
   margin: 25px 0;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.05);
   padding: 15px;
   border-radius: 18px;
+  color: var(--white);
+}
+
+.text-light {
+  color: var(--white);
+  font-size: 18px;
 }
 
 .rating-token {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   background-color: var(--dark-blue);
   color: var(--orange);
   border: 2px solid var(--orange);
   font-weight: 700;
+  font-size: 1.4rem;
+  box-shadow: 0 0 15px rgba(251, 124, 29, 0.2);
 }
 
 .comment-box {
@@ -209,10 +243,6 @@ p {
   border-color: var(--orange);
 }
 
-.thank-you {
-  text-align: center;
-}
-
 .selection-badge {
   background: rgba(255, 255, 255, 0.05);
   color: var(--orange);
@@ -225,13 +255,10 @@ p {
 @media (max-width: 480px) {
   .card {
     padding: 28px;
-    max-width: 90%;
+    max-width: 95%;
   }
   .circle-btn {
     width: 45px;
     height: 45px;
-  }
-  .lang-option img {
-    width: 60px;
   }
 }
