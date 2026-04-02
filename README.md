@@ -1,18 +1,36 @@
-# Interaktivna Rating Aplikacija (HR/EN)
+# Interactive Rating App / Interaktivna Rating Aplikacija
 
-Ovo je moderna React aplikacija za prikupljanje ocjena korisnika. Projekt je optimiziran za čisto korisničko iskustvo, podržava više jezika (Hrvatski i Engleski) te uključuje logiku za potvrdu ocjene i opcionalno ostavljanje komentara.
+[HR] Moderna React aplikacija za prikupljanje ocjena korisnika s podrškom za više jezika.
+[EN] A modern React application for collecting user ratings with multi-language support.
 
-## 🚀 Značajke
+---
 
-* **Odabir jezika:** Početni ekran s vizualnim prikazom zastava (HR/EN).
-* **Interaktivno ocjenjivanje:** Odabir ocjene od 1 do 5 s hover efektima.
-* **Sustav potvrde:** Dodatni korak "Jeste li sigurni?" kako bi se spriječilo slučajno slanje.
-* **Logika odustajanja:** Ako korisnik klikne "Ne", nudi mu se mogućnost ponovnog ocjenjivanja ili odustajanja uz opcionalni tekstualni komentar.
-* **Responzivan dizajn:** Potpuno prilagođeno mobilnim uređajima i desktop računalima.
+## 🌍 Language Support / Podrška za jezike
+Aplikacija nudi izbor jezika na samom početku / The app offers a language choice at the very start:
+* **Hrvatski (Croatian)** 🇭🇷
+* **English** 🇬🇧
 
-## 🛠️ Instalacija i pokretanje
+---
 
-1. **Klonirajte projekt ili kopirajte datoteke.**
-2. **Instalirajte ovisnosti:**
+## 🚀 Features / Značajke
+
+### [HR] Hrvatski:
+* **Dvojezičnost:** Potpuni prijevodi za sve faze (ocjenjivanje, potvrda, zahvala).
+* **Sustav potvrde:** Korisnik mora potvrditi svoju ocjenu (ekran "Jeste li sigurni?").
+* **Logika odustajanja:** Mogućnost ponovnog ocjenjivanja ili slanja komentara bez ocjene.
+* **Responzivnost:** Optimizirano za sve veličine ekrana.
+
+### [EN] English:
+* **Dual Language:** Full translations for all stages (rating, confirmation, thank you).
+* **Confirmation System:** Users must confirm their rating ("Are you sure?" screen).
+* **Decline Logic:** Options to rate again or leave a text comment without a rating.
+* **Responsive:** Fully optimized for mobile and desktop views.
+
+---
+
+## 🛠️ Installation / Instalacija
+
+1. Clone the repository / Klonirajte repozitorij.
+2. Install dependencies / Instalirajte ovisnosti:
    ```bash
    npm install
